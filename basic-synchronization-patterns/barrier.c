@@ -35,5 +35,6 @@ main()
 
     for(i = 0; i < n; ++i)
         pthread_join(t[i], 0);
+
     printf("count is %d\n", count);
 }
