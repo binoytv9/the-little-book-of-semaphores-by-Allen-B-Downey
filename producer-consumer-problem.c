@@ -26,9 +26,10 @@ char *eventBuf[] = {
                         "again bath",
                         "study",
                         "dinner",
-                        "sleep"
+                        "sleep",
+                        NULL
                     };
-int eventNum = sizeof(eventBuf) / sizeof(char *);
+int eventNum = sizeof(eventBuf) / sizeof(char *) - 1;
 
 void *producer(void *a);
 void *consumer(void *a);
